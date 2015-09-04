@@ -1,6 +1,6 @@
 # https://github.com/ztgu/sorting_algorithms_py
 
-class BubbleSort {    
+class BubbleSort {
     static Sort($targetList) {
         $n = $targetList.Count
 
@@ -11,7 +11,7 @@ class BubbleSort {
                     $targetList[$j+1]=$targetList[$j]
                     $targetList[$j]=$temp
                 }
-            }        
+            }
         }
     }
 }

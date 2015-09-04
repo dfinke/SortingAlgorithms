@@ -1,12 +1,12 @@
 class InsertionSort {
     static Sort($targetList) {
-        $n=$targetList.count        
+        $n=$targetList.count
 
         for ($i = 0; $i -lt $n-1; $i++) {
             $j=$i+1
 
             while($j -gt 0) {
-                
+
                 if($targetList[$j-1] -gt $targetList[$j]) {
                     $temp=$targetList[$j-1]
                     $targetList[$j-1]=$targetList[$j]

@@ -1,13 +1,13 @@
-class QuickSort {    
-    static Sort($targetList, $left, $right) { 
+class QuickSort {
+    static Sort($targetList, $left, $right) {
         $i=$left
         $j=$right
         $pivot = $targetList[($left+$right)/2]
-                
+
         while($i -le $j) {
             while($targetList[$i] -lt $pivot -and $i -lt $right) {$i++}
             while($targetList[$j] -gt $pivot -and $j -gt $left) {$j--}
-            
+
             if($i -le $j) {
                 $tmp = $targetList[$i]
                 $targetList[$i]=$targetList[$j]
