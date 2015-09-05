@@ -41,5 +41,5 @@ class HeapSort {
     }
 }
 
-$list = (1..100 | %{Get-Random -Minimum 1 -Maximum 100})
+$list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 1000})
 [HeapSort]::Sort($list)
