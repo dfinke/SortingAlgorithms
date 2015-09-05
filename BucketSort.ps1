@@ -1,4 +1,4 @@
-class BucketSort {
+class BucketSort { 
     static Sort($targetList) {
 
         $max = $targetList[0]
