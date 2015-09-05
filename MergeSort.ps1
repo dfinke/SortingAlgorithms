@@ -41,5 +41,5 @@ class MergeSort {
     }
 }
 
-$list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 10000})
+$list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 1000})
 [MergeSort]::Sort($list)
