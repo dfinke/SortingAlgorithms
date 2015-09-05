@@ -5,7 +5,4 @@
 * Insertion Sort: O(n^2)
 * Quicksort: O(n log(n))
 * Mergesort: O(n log(n))
-
-
-
 * Selection Sort: O(n^2)
