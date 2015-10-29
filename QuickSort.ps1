@@ -23,5 +23,5 @@ class QuickSort {
     }
 }
 
-$list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 1000})
+$list = (1..1000 | ForEach{Get-Random -Minimum 1 -Maximum 1000})
 [QuickSort]::Sort($list, 0, $list.Count-1)
