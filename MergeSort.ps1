@@ -10,12 +10,13 @@ class MergeSort {
         while (($leftPos -le $leftEnd) -and ($rightPos -le $rightEnd)) {
             if ($theArray[$leftPos].CompareTo($theArray[$rightPos]) -le 0) {
                 $tempArray[$tmpPos++] = $theArray[$leftPos++]
-            } else {
+            }
+            else {
                 $tempArray[$tmpPos++] = $theArray[$rightPos++]
             }
         }
 
-        while ($leftPos -le $leftEnd)   { $tempArray[$tmpPos++] = $theArray[$leftPos++]  }
+        while ($leftPos -le $leftEnd) { $tempArray[$tmpPos++] = $theArray[$leftPos++] }
         while ($rightPos -le $rightEnd) { $tempArray[$tmpPos++] = $theArray[$rightPos++] }
 
         for ($i = 0; $i -lt $numElements; $i++, $rightEnd--) {
@@ -36,10 +37,10 @@ class MergeSort {
             [MergeSort]::Sort($theArray, $tempArray, $left, $center)
             [MergeSort]::Sort($theArray, $tempArray, ($center + 1), $right)
 
-            [MergeSort]::Merge($theArray, $tempArray, $left, ($center + 1),$right)
+            [MergeSort]::Merge($theArray, $tempArray, $left, ($center + 1), $right)
         }
     }
 }
 
-$list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 1000})
-[MergeSort]::Sort($list)
+# $list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 1000})
+# [MergeSort]::Sort($list)

@@ -1,9 +1,9 @@
-class BucketSort { 
+class BucketSort {
     static Sort($targetList) {
 
         $max = $targetList[0]
         $min = $targetList[0]
-        
+
         for ($i = 1; $i -lt $targetList.Count; $i++) {
             if ($targetList[$i] -gt $max) { $max = $targetList[$i] }
             if ($targetList[$i] -lt $min) { $min = $targetList[$i]}
@@ -11,7 +11,7 @@ class BucketSort {
 
         $holder = New-Object object[][] ($max - $min + 1)
 
-        for ($i = 0; $i -lt $holder.Count; $i++) { 
+        for ($i = 0; $i -lt $holder.Count; $i++) {
             $holder[$i] = @()
         }
 
@@ -33,5 +33,5 @@ class BucketSort {
     }
 }
 
-$list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 1000})
-[BucketSort]::Sort($list)
+# $list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 1000})
+# [BucketSort]::Sort($list)

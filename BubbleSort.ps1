@@ -16,5 +16,5 @@ class BubbleSort {
     }
 }
 
-$list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 1000})
-[BubbleSort]::Sort($list)
+# $list = (1..1000 | %{Get-Random -Minimum 1 -Maximum 1000})
+# [BubbleSort]::Sort($list)
