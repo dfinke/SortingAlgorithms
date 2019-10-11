@@ -51,7 +51,17 @@ Measure-Benchmark  -RepeatCount 10 -Technique @{
     }
 
     SelectionSort = {        
-        GenList
+        
         [SelectionSort]::Sort((GenList))
+    }
+
+    PowerShellSortObjectInObject = {        
+        $list=GenList
+        Sort-Object -InputObject $list
+    }
+
+    PowerShellSortObjectPipe= {        
+        $list=GenList
+        $list | Sort-Object
     }
 }
