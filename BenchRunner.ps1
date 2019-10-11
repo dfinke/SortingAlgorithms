@@ -6,5 +6,5 @@ $r = .\DoBench.ps1 | Out-String
 
 '' | Add-Content $outFile
 '```' | Add-Content $outFile
-$r | Add-Content $outFile
+$r.Trim() | Add-Content $outFile
 '```' | Add-Content $outFile
