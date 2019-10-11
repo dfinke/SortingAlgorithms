@@ -1,3 +1,10 @@
-"PowerShell Version: $(($PSVersionTable).PSVersion.ToString())" | Add-Content .\bench.txt
+$outFile = ".\bench.md"
+'' | Add-Content $outFile
+"## PowerShell Version: $(($PSVersionTable).PSVersion.ToString())" | Add-Content $outFile
 
-.\DoBench.ps1 | Out-String | Add-Content .\bench.txt
+$r = .\DoBench.ps1 | Out-String
+
+'' | Add-Content $outFile
+'```' | Add-Content $outFile
+$r | Add-Content $outFile
+'```' | Add-Content $outFile
