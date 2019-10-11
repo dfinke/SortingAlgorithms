@@ -1,3 +1,5 @@
+# Sorting
+
 * Bubble Sort: `O(n^2)`
 * Bucket Sort:
 * Counting Sort:
