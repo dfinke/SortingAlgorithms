@@ -11,10 +11,6 @@
 
 # Benchmark
 
-
-## PowerShell Version: 5.1.18362.145
-
-
 ## PowerShell Version: 5.1.18362.145
 
 ```
